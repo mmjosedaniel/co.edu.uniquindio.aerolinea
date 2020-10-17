@@ -11,7 +11,7 @@ public class ArchivoUtil {
 		
 		ArrayList<String> contenido= new ArrayList<String>();
 		FileReader fileReader= new FileReader(rutaArchivo);
-		BufferedReader bufferedReader = BufferedReader(fileReader);
+		BufferedReader bufferedReader = new BufferedReader(fileReader);
 		String linea="";
 		
 		while((linea=bufferedReader.readLine())!=null) {
