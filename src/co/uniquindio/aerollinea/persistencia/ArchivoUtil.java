@@ -7,7 +7,8 @@ import java.util.ArrayList;
 
 public class ArchivoUtil {
 	
-	public static ArrayList<String>cargarArchivo(String rutaArchivo)throws IOException{
+	
+	public ArrayList<String>cargarArchivo(String rutaArchivo)throws IOException{
 		
 		ArrayList<String> contenido= new ArrayList<String>();
 		FileReader fileReader= new FileReader(rutaArchivo);
@@ -22,5 +23,7 @@ public class ArchivoUtil {
 		
 		return contenido;
 	}
+	
+	
 	
 }

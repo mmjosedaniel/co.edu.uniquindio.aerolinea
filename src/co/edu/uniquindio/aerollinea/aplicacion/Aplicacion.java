@@ -1,11 +1,24 @@
 package co.edu.uniquindio.aerollinea.aplicacion;
 
 import java.awt.EventQueue;
+import java.io.IOException;
+import java.util.ArrayList;
 
 import co.edu.uniquindio.aerollinea.views.PasajeroView;
+import co.uniquindio.aerollinea.persistencia.ArchivoUtil;
 
 public class Aplicacion {
-	public static void main(String[] args) {
+
+	
+	public static String listaArchivos() throws IOException {
+		ArchivoUtil archivo= new ArchivoUtil();
+	    ArrayList<String>lista=archivo.cargarArchivo("C:/td/persistencia/archivos/pasajeroArchivo.txt");
+	    return lista.get(0);
+	}
+
+	public static void main(String[] args) throws IOException {
+		System.out.println(listaArchivos());
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
