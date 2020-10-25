@@ -8,7 +8,6 @@ import co.edu.uniquindio.aerollinea.model.services.IModelServices;
 
 public class Aerolinea implements IModelServices {
 	private String nombre;
-	
 	private Tiquete tiquete;
 	private Vuelo vuelo;
 	private ArrayList<Pasajero>listaPasajeros;

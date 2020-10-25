@@ -4,10 +4,13 @@ import java.awt.EventQueue;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import co.edu.uniquindio.aerollinea.exceptions.PasajeroException;
+import co.edu.uniquindio.aerollinea.model.Aerolinea;
 import co.edu.uniquindio.aerollinea.views.PasajeroView;
 import co.uniquindio.aerollinea.persistencia.ArchivoUtil;
 
 public class Aplicacion {
+	
 
 	
 	public static String listaArchivos() throws IOException {
@@ -16,8 +19,9 @@ public class Aplicacion {
 	    return lista.get(0);
 	}
 
-	public static void main(String[] args) throws IOException {
-		System.out.println(listaArchivos());
+	public static void main(String[] args) throws IOException, PasajeroException {
+		
+		
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {

@@ -136,7 +136,7 @@ public class PasajeroView {
 		textField_fechaNacimiento.setColumns(10);
 		textFieldMensaje = new JTextField();
 		textFieldMensaje.setEditable(false);
-		textFieldMensaje.setBounds(329, 219, 160, 20);
+		textFieldMensaje.setBounds(329, 219, 160, 70);
 		frmRegistroDelPasajero.getContentPane().add(textFieldMensaje);
 		textFieldMensaje.setColumns(10);
 		
